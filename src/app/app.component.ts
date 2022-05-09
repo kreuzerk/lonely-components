@@ -4,14 +4,6 @@ import { RouterModule } from '@angular/router';
 
 import { FooComponent } from './foo/foo.component';
 
-const routes = [
-  {
-    path: 'foo',
-    loadComponent: () =>
-      import('./foo/foo.component').then((c) => c.FooComponent),
-  },
-];
-
 @Component({
   selector: 'app-root',
   imports: [CommonModule, RouterModule, FooComponent],
